@@ -1,0 +1,149 @@
+@import url('/wp-content/plugins/aunt_bertha/css/bootstrap.min.css');
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+.sr-only {
+  /* needs !important to not be overridden by bootstrap */
+  display: none !important;
+}
+
+.form-desc {
+  font-size: 17px;
+  line-height: 22px;
+  color: #34495E;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 0 20px;
+}
+
+.form-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+  max-width: 610px;
+  margin: 0 auto;
+}
+#search-form {
+  text-align: right;
+  display: block;
+  margin: 0;
+}
+#search-form .control-group,
+#search-form .form-group {
+  display: inline;
+}
+#search-form input {
+  height: 50px;
+  width: 100%;
+  color: #4a4a4a;
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  border: 1px solid #34495E;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  -webkit-transition: border-color 0.3s, background-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s;
+  -webkit-appearance: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.0) !important;
+  margin: 0 6px 10px 0;
+}
+#search-form input:focus {
+  border-color: #34495E !important;
+  outline: none;
+}
+#search-form input:focus:invalid {
+  color: inherit !important;
+}
+#search-form input::-webkit-input-placeholder,
+#search-form input::-moz-placeholder,
+#search-form input:-ms-input-placeholder,
+#search-form input:-moz-placeholder,
+#search-form input.placeholder {
+  color: #666666;
+  font-weight: 300;
+  opacity: 1;
+}
+
+.search-button,
+.search-button.disabled,
+.search-button[disabled]  {
+  height: 50px;
+  width: 100%;
+  background: #167E8E;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
+  text-shadow: none;
+  -webkit-transition: background-color 0.3s !important;
+  transition: background-color 0.3s !important;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.0);
+  margin: 0 0 10px 0;
+}
+
+.search-branding {
+  color: #666666;
+  text-align: right;
+}
+.search-branding img {
+  height: 14px;
+  margin-bottom: 4px;
+}
+
+@media only screen and (min-width: 600px) {
+  .form-desc {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .postal-search #search-info {
+    max-width: 550px;
+  }
+  .postal-search #postal {
+    width: 400px;
+  }
+  .text-search #search-info {
+    max-width: 610px;
+  }
+  .text-search #term {
+    width: 260px;
+  }
+  .text-search #postal{
+    width: 190px;
+  }
+  .search-button {
+    width: 110px;
+  }
+}
+
+.error-msg {
+  display: none;
+  color: #a94442;
+}
+.has-error .error-msg {
+  display: block;
+  padding: 0 10px;
+  text-align: left;
+  float: left;
+}
+.has-error input {
+  border-color: #a94442 !important;
+}

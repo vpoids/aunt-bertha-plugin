@@ -4,7 +4,7 @@ Based on the Community Widget from Aunt Bertha. Submits a search request to Aunt
 
 The following customization options are available:
 <ul>
-<li></li>Partner ID: Unique ID provided to you by the Aunt Bertha Community Engagement Team (required)</li>
+<li>Partner ID: Unique ID provided to you by the Aunt Bertha Community Engagement Team (required)</li>
 <li>Referral domain: Referral tag or domain to identify the source of the search (required)</li>
 <li>Search description: Introduction text above the search box</li>
 <li>Placeholder text: Text of the placeholder in the zip code field</li>
